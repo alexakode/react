@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Child from "./components/Child.jsx";
 
+// // We can create components in the same file
+// const Header = () => <h1>My Application</h1>;
+// const Body = () => <h1>This is the body of my application.</h1>;
+// const Footer = () => <h1>My Application Footer</h1>;
 function App() {
-  const [count, setCount] = useState(0)
-
+  const users = ["Jim", "John", "Jane", "Lars"];
+  const objUsers = [
+    // { name: "Jim", email: "jim@example.com" },
+    // { name: "John", email: "john@example.com" },
+    // { name: "Jane", email: "jane@example.com" },
+    // { name: "Lars", email: "lars@example.com" },
+  ];
+  // return (
+  //   <>
+  //     {objUsers.map((user, index) => (
+  //       <div key={index}><h3>Name: {user.name},</h3> <h3>Email: {user.email}</h3></div> //This works as long as each string in user is unique
+  //     ))}
+  //   </>
+  // );
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Child />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
