@@ -1,7 +1,8 @@
-export default function GrandChild({ age }) {
+export default function GrandChild(props) {
+  console.log(props);
   return (
     <>
-      <h4>{age}</h4>
+      <h1>Grandchild</h1>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import GrandChild from "./GrandChild";
+import GrandChild from "./GrandChild.jsx";
 export default function Child({ name, ...rest }) {
   return (
     <>
